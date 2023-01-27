@@ -36,6 +36,14 @@ def main():
         #DIBUJAR
         dibujar()
         glfw.poll_events()
+        glBegin(GL_LINES)
+        glColor3f(1.0,0.0,0.0)
+        glVertex3f(-0.7,0.0,0.0)
+        glVertex3f(0.0,0.0,0.0)
+        glVertex3f(0.4,-0.1,0.0)
+        glVertex3f(0.35,-0.6,0.0)
+        glEnd()
+
         glfw.swap_buffers(window)
     glfw.destroy_window(window)
     glfw.terminate()
